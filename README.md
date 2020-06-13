@@ -1,17 +1,10 @@
 # README
 
-[![Travis Build Status](https://secure.travis-ci.org/egeloen/ivory-json-builder.png?branch=master)](http://travis-ci.org/egeloen/ivory-json-builder)
-[![AppVeyor Build status](https://ci.appveyor.com/api/projects/status/9f6s2ya7cxaamm20/branch/master?svg=true)](https://ci.appveyor.com/project/egeloen/ivory-json-builder/branch/master)
-[![Code Coverage](https://scrutinizer-ci.com/g/egeloen/ivory-json-builder/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/egeloen/ivory-json-builder/?branch=master)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/egeloen/ivory-json-builder/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/egeloen/ivory-json-builder/?branch=master)
-[![Dependency Status](https://www.versioneye.com/php/egeloen:json-builder/badge.svg)](https://www.versioneye.com/php/egeloen:json-builder)
+[![Travis Build Status](https://api.travis-ci.com/bresam/ivory-json-builder.svg?branch=master)](https://travis-ci.com/github/bresam/ivory-json-builder)
+[![Code Coverage](https://scrutinizer-ci.com/g/bresam/ivory-json-builder/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/bresam/ivory-json-builder/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/bresam/ivory-json-builder/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bresam/ivory-json-builder/?branch=master)
 
-[![Latest Stable Version](https://poser.pugx.org/egeloen/json-builder/v/stable.svg)](https://packagist.org/packages/egeloen/json-builder)
-[![Latest Unstable Version](https://poser.pugx.org/egeloen/json-builder/v/unstable.svg)](https://packagist.org/packages/egeloen/json-builder)
-[![Total Downloads](https://poser.pugx.org/egeloen/json-builder/downloads.svg)](https://packagist.org/packages/egeloen/json-builder)
-[![License](https://poser.pugx.org/egeloen/json-builder/license.svg)](https://packagist.org/packages/egeloen/json-builder)
-
-The Ivory JSON builder is a PHP 5.6+ library allowing you to build your JSON through the Symfony2
+The Ivory JSON builder is a PHP 7.0+ library allowing you to build your JSON through the Symfony2
 [PropertyAccess](http://symfony.com/doc/current/components/property_access/index.html) component while keeping the
 control of the value escaping.
 
@@ -30,8 +23,9 @@ echo $json;
 
 ## Documentation
 
- 1. [Installation](/doc/installation.md)
- 2. [Usage](/doc/usage.md)
+ * [Installation](/doc/installation.md)
+ * [Usage](/doc/usage.md)
+ * [Development Environment](/doc/development_environment.md)
 
 ## Testing
 

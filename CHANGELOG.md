@@ -1,8 +1,12 @@
 # CHANGELOG
 
-### 3.0.1 (????-??-??)
+### 3.0.1 (2020-06-13)
 
+ * forked from egeleon/json-builder
  * 5638d50 - Fix UPGRADE file
+ * fixed development environment
+ * defined php ^7.0 dependency
+ * published as ivory/json-builder
 
 ### 3.0.0 (2017-02-27)
 

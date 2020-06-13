@@ -18,7 +18,7 @@ $ sudo mv composer.phar /usr/local/bin/composer
 Require the library in your `composer.json` file:
 
 ``` bash
-$ composer require egeloen/json-builder
+$ composer require ivory/json-builder
 ```
 
 Composer will automatically download your dependencies & create an autoload file in the ``vendor`` directory.

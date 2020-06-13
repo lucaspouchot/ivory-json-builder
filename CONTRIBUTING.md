@@ -31,7 +31,7 @@ $ git clone git@github.com:your-name/ivory-json-builder.git
 $ git checkout -b bug-fix-description
 ```
 
-Then, we recommend to use [Docker](https://www.docker.com) and follow this [instructions](/doc/docker.md) in order to
+Then, we recommend to use [Docker](https://www.docker.com) and follow this [instructions](/doc/development_environment.md) in order to
 set up the project.
 
 When you're on the new branch with the dependencies, code as much as you want and when the fix is ready, don't commit
@@ -55,7 +55,7 @@ $ git rebase -i HEAD~3
 If your branch conflicts with the master branch, you will need to rebase and repush it with the following commands:
 
 ``` bash
-$ git remote add upstream git@github.com:egeloen/ivory-json-builder.git
+$ git remote add upstream git@github.com:bresam/ivory-json-builder.git
 $ git pull --rebase upstream master
 $ git push origin bug-fix-description -f
 ```
