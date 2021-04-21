@@ -39,9 +39,7 @@ class JsonBuilder
      */
     private $jsonEncodeOptions;
 
-    /**
-     * @param PropertyAccessorInterface|null $propertyAccessor
-     */
+
     public function __construct(PropertyAccessorInterface $propertyAccessor = null)
     {
         $this->accessor = $propertyAccessor ?: new PropertyAccessor();
@@ -49,49 +47,29 @@ class JsonBuilder
         $this->reset();
     }
 
-    /**
-     * @return int
-     */
-    public function getJsonEncodeOptions()
+    public function getJsonEncodeOptions(): int
     {
         return $this->jsonEncodeOptions;
     }
 
-    /**
-     * @param int $jsonEncodeOptions
-     *
-     * @return JsonBuilder
-     */
-    public function setJsonEncodeOptions($jsonEncodeOptions)
+    public function setJsonEncodeOptions(int $jsonEncodeOptions): JsonBuilder
     {
         $this->jsonEncodeOptions = $jsonEncodeOptions;
 
         return $this;
     }
 
-    /**
-     * @return bool
-     */
-    public function hasValues()
+    public function hasValues(): bool
     {
         return !empty($this->values);
     }
 
-    /**
-     * @return array
-     */
-    public function getValues()
+    public function getValues(): array
     {
         return $this->values;
     }
 
-    /**
-     * @param array  $values
-     * @param string $pathPrefix
-     *
-     * @return JsonBuilder
-     */
-    public function setValues(array $values, $pathPrefix = null)
+    public function setValues(array $values, string $pathPrefix = null): JsonBuilder
     {
         foreach ($values as $key => $value) {
             $path = sprintf('%s[%s]', $pathPrefix, $key);
@@ -107,13 +85,9 @@ class JsonBuilder
     }
 
     /**
-     * @param string $path
-     * @param mixed  $value
-     * @param bool   $escapeValue
-     *
-     * @return JsonBuilder
+     * @param mixed $value
      */
-    public function setValue($path, $value, $escapeValue = true)
+    public function setValue(string $path, $value, bool $escapeValue = true): JsonBuilder
     {
         if (!$escapeValue) {
             $placeholder = uniqid('ivory', true);
@@ -127,12 +101,7 @@ class JsonBuilder
         return $this;
     }
 
-    /**
-     * @param string $path
-     *
-     * @return JsonBuilder
-     */
-    public function removeValue($path)
+    public function removeValue(string $path): JsonBuilder
     {
         unset($this->values[$path]);
         unset($this->escapes[$path]);
@@ -140,10 +109,7 @@ class JsonBuilder
         return $this;
     }
 
-    /**
-     * @return JsonBuilder
-     */
-    public function reset()
+    public function reset(): JsonBuilder
     {
         $this->values = [];
         $this->escapes = [];
@@ -152,10 +118,7 @@ class JsonBuilder
         return $this;
     }
 
-    /**
-     * @return string
-     */
-    public function build()
+    public function build(): string
     {
         $json = [];
 

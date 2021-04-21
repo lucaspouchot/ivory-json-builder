@@ -12,11 +12,12 @@
 namespace Ivory\Tests\JsonBuilder;
 
 use Ivory\JsonBuilder\JsonBuilder;
+use PHPUnit\Framework\TestCase;
 
 /**
  * @author GeLo <geloen.eric@gmail.com>
  */
-class JsonBuilderTest extends \PHPUnit_Framework_TestCase
+class JsonBuilderTest extends TestCase
 {
     /**
      * @var JsonBuilder
@@ -26,7 +27,7 @@ class JsonBuilderTest extends \PHPUnit_Framework_TestCase
     /**
      * {@inheritdoc}
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->jsonBuilder = new JsonBuilder();
     }

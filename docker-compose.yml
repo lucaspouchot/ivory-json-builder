@@ -6,7 +6,7 @@ services:
         env_file:
             - .env
         environment:
-            XDEBUG_CONFIG: remote_host=${XDEBUG_HOST} remote_port=${XDEBUG_PORT} idekey=${XDEBUG_IDEKEY}
+            XDEBUG_CONFIG: client_host=${XDEBUG_HOST} client_port=${XDEBUG_PORT} idekey=${XDEBUG_IDEKEY}
             PHP_IDE_CONFIG: serverName=${IDE_SERVER_NAME}
         volumes:
             - ~/.composer:/var/www/.composer
